@@ -34,16 +34,16 @@ console.log(`Решта клієнта з 500 грн.: ${changeClient}`);
 
 //Середнє значення
 const averagePrice = sumPriceAll / 3;
-const averageAllNumder = averagePrice.toFixed(2);
+const averageAllNumder = parseFloat(averagePrice.toFixed(2));
 console.log(`Среднє значення: ${averageAllNumder}`);
 
 // Знижка
 const sale = Math.random() * sumPriceAll;
 const toPay = sumPriceAll - sale;
-const saleWithHundredth = sale.toFixed(2);
+const saleWithHundredth = parseFloat(sale.toFixed(2));
 console.log(`Знижка: ${saleWithHundredth}`);
-const toPayHundredth = toPay.toFixed(2)
+const toPayHundredth = parseFloat(toPay.toFixed(2))
 console.log(`До сплати: ${toPayHundredth} `);
 const noPat = sumPriceAll / 2 - sale;
-const noPatHundredth = noPat.toFixed(2)
+const noPatHundredth = parseFloat(noPat.toFixed(2))
 console.log(`Чистий прибуток: ${noPatHundredth}`);

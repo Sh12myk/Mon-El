@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    text-align: left;
+    font-size: 36px;
+    font-family: monospace;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: slategrey;
+    color: rgb(0, 9, 39);
+    border: thick double silver;
+    border-radius: 10%;
+    box-shadow: 12px 12px 20px 1px slategrey;
+}
+
+a:hover {
+    box-shadow: none;
+    opacity: 0.65;
+    transform: scale(0.95)
+}
+
+div {
+    display: none;
+}
+
+*:target {
+    display: block;
+}

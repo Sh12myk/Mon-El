@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HW#2</title>
+</head>
+<header>
+    <h1>HW#2 "Цикли та Розгалуження"</h1>
+</header>
+
+<body>
+    <div class="steps">
+        <div class="step active">
+            <div class="step__header">
+                <h3>Youre numbers</h3>
+            </div>
+            <div class="step__point">
+                <div class="pre-line"></div>
+                <div class="point"></div>
+                <div class="post-line"></div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step__header">
+                <h3> Result
+                </h3>
+            </div>
+            <div class="step__point">
+                <div class="pre-line"></div>
+                <div class="point"></div>
+                <div class="post-line"></div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step__header">
+                <h3>History</h3>
+            </div>
+            <div class="step__point">
+                <div class="pre-line"></div>
+                <div class="point"></div>
+                <div class="post-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="forms">
+        <form name="profile">
+            <input type="number" placeholder="First number" id="firstNumber">
+            <input type="number" placeholder="Second Number " id="secondNumber">
+        </form>
+        <form class="hidden" name="checkOption" id="evenChoice">
+            <p>Want to skip even numbers?</p>
+            <div>
+                <input type="radio" id="evenNumbersChoice1" name="choice" value="true" checked>
+                <label for="contactChoice1">Yes</label>
+                <input type="radio" id="evenNumbersChoice2" name="choice" value="false">
+                <label for="contactChoice2">No</label>
+                <button type="submit" id="submit">
+                    Send answer
+                </button>
+            </div>
+            <label id="result">Result: </label>
+        </form>
+        <form class="hidden" name="finish">
+            <h5 class="history"></h5>
+        </form>
+        <button class="btn-back" type="button" name="button" onclick="history.back(-1)">
+            Back
+          </button>
+        <button class=" btn-submit " type="button " name="button ">
+              Next
+            </button>
+    </div>
+
+    <script src="./js/app.js "></script>
+</body>
+
+
+</html>

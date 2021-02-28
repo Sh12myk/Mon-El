@@ -47,13 +47,13 @@
         </div>
     </div>
     <div class="forms">
-        <form name="profile">
+        <form name="profile" class="numbers">
             <input type="number" placeholder="First number" id="firstNumber">
             <input type="number" placeholder="Second Number " id="secondNumber">
         </form>
         <form class="hidden" name="checkOption" id="evenChoice">
             <p>Want to skip even numbers?</p>
-            <div>
+            <div class="radio">
                 <input type="radio" id="evenNumbersChoice1" name="choice" value="true" checked>
                 <label for="contactChoice1">Yes</label>
                 <input type="radio" id="evenNumbersChoice2" name="choice" value="false">
@@ -62,17 +62,26 @@
                     Send answer
                 </button>
             </div>
-            <label id="result">Result: </label>
+            <label id="result"></label>
         </form>
         <form class="hidden" name="finish">
-            <h5 class="history"></h5>
+            <table>
+                <thead>Your results</thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
         </form>
-        <button class="btn-back" type="button" name="button" onclick="history.back(-1)">
-            Back
-          </button>
-        <button class=" btn-submit " type="button " name="button ">
+        <div class="btn-bottom">
+            <button class="btn-back" type="button" name="button" onclick="history.back(-1)">
+             Back
+            </button>
+            <button class=" btn-submit " type="button " name="button ">
               Next
             </button>
+        </div>
+
     </div>
 
     <script src="./js/app.js "></script>

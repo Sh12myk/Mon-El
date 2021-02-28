@@ -2,6 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 5px #2f80ed, -1px 1px 5px #2f80ed;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-shadow: 1px 1px 5px #2f80ed, -1px 1px 5px #2f80ed;
 }
 
 .steps {
@@ -62,11 +75,16 @@
 }
 
 .forms {
-    width: 300px;
+    width: 320px;
+    padding: 10px 10px;
     margin: 0 auto;
     display: grid;
-    justify-items: end;
+    justify-items: center;
     grid-row-gap: 15px;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: #e0e0e0;
+    box-shadow: 1px 1px 5px #2f80ed, -1px 1px 5px #2f80ed;
 }
 
 form {
@@ -80,11 +98,53 @@ input {
     height: 50px;
 }
 
+.radio input {
+    width: 10px;
+    height: 10px;
+}
+
 .btn-submit {
     width: 100px;
     height: 30px;
 }
 
+.btn-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px #2f80ed, -1px 1px 5px #2f80ed;
+}
+
+button:active {
+    transform: scale(0.8);
+    box-shadow: none;
+}
+
 .hidden {
     display: none;
+}
+
+.numbers input {
+    border-radius: 50%;
+    text-align: center;
+}
+
+#result {
+    font-size: 20px;
+    text-shadow: 1px 1px 5px #2f80ed, -1px 1px 5px #2f80ed;
+}
+
+table {
+    border: 1px solid orangered;
 }

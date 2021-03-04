@@ -15,7 +15,7 @@ function getPairs(students) {
 function getThemes(pairs, themes) {
     let studentsPairsThemes = [];
     for (let i = 0; i < pairs.length; i++) {
-        studentsPairsThemes[i] = [pairs[i], themes[i]]
+        studentsPairsThemes[i] = [pairs[i], themes[i]];
     }
     return studentsPairsThemes;
 }
@@ -37,10 +37,10 @@ function getMarkStudentsThemes(studentsPairs, themes) {
     return studentsMarksThemes;
 }
 const pairs = getPairs(students);
-console.log(JSON.stringify(pairs, style));
+console.log(JSON.stringify(pairs));
 const pairsThemes = getThemes(pairs, themes);
-console.log(JSON.stringify(pairsThemes, style));
+console.log(JSON.stringify(pairsThemes));
 const markStudents = getMarks(students, marks);
-console.log(JSON.stringify(markStudents, style));
+console.log(JSON.stringify(markStudents));
 const markStudentsThemes = getMarkStudentsThemes(pairs, themes);
-console.log(JSON.stringify(markStudentsThemes, style));
+console.log(JSON.stringify(markStudentsThemes));

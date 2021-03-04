@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: monospace;
+}
+
+header {
+    width: 100vw;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    animation: blink 0.51s infinite alternate ease-in-out;
+}
+
+@keyframes blink {
+    from {
+        color: rgb(31, 2, 2);
+        text-shadow: 5px 5px 5px rgb(119, 18, 18);
+    }
+    to {
+        color: rgb(119, 18, 18);
+        text-shadow: 5px 5px 5px rgb(31, 2, 2);
+    }
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+    margin: 50px;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 35% 50%;
+    grid-template-columns: 70%;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.pairs_list {
+    margin-left: 15vw;
+    margin-bottom: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.students_list {
+    margin-left: 5vw;
+    margin-bottom: -100px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.pairs_list ol:not(:first-child) {
+    list-style-type: none;
+}
+
+.students_list ol:not(:first-child) {
+    list-style-type: none;
+}
+
+li {
+    font-size: 0.5em;
+}
+
+.btn_double {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+    margin-bottom: 10px;
+}
+
+.name {
+    width: 58px;
+    height: 36px;
+    font-size: 0.5em;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.marks {
+    width: 58px;
+    height: 36px;
+    font-size: 0.5em;
+    border-left: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn_tripl {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.name_pairs {
+    width: 58px;
+    height: 36px;
+    font-size: 0.5em;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.subject_pairs {
+    width: 72px;
+    height: 36px;
+    font-size: 0.5em;
+    border: 1px solid #E0E0E0;
+}
+
+.marks_pairs {
+    width: 58px;
+    height: 36px;
+    font-size: 0.5em;
+    border-left: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.no-view {
+    display: none;
+}
+
+.view {
+    display: block;
+}
+
+.active {
+    background-color: #18A0FB;
+    color: white;
+    border: 1px solid #18A0FB;
+}
+
+.no-active {
+    background-color: transparent;
+    color: #2C2C2C;
+    border: 1px solid #E0E0E0;
+}

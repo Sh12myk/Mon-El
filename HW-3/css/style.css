@@ -31,26 +31,28 @@ p {
     animation: blink-animation 1s steps(5, start) infinite;
 }
 
-
-}
 @keyframes blink-animation {
     to {
         visibility: hidden;
     }
 }
+
 @-webkit-keyframes blink-animation {
     to {
         visibility: hidden;
     }
 }
+
 h1 {
     font-size: 42px;
     text-align: center;
 }
+
 h2 {
     font-size: 25px;
     text-align: center;
 }
+
 .btn {
     display: flex;
     justify-content: center;
@@ -65,14 +67,17 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
 .btn:hover {
     background-color: #2ecc71;
 }
+
 .btn:active {
     background-color: #2ecc71;
     box-shadow: 0 5px #95a5a6;
     transform: translateY(4px);
 }
+
 label {
     display: flex;
     width: 400px;
@@ -83,6 +88,7 @@ label {
     margin-left: 33%;
     margin-right: auto;
 }
+
 input {
     text-align: center;
     font-size: 35px;

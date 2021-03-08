@@ -5,7 +5,7 @@ const resultLabel = document.getElementById('result');
 function computePower() {
     const userNumber = document.getElementById('userNumber').value;
     const userExponent = document.getElementById('userExponent').value;
-    if (userNumber % 1 !== 0 || userExponent % 1 !== 0) {
+    if ((!(userNumber % 1)) || (!(userExponent % 1))) {
         document.getElementById("result").innerHTML = `Error, enter correct numbers`
     } else {
         let exponentiation = 1;

@@ -10,6 +10,17 @@ function getPairs(students) {
         studentsPairs[i] = [studentsMans[i], studentsWomans[i]];
     }
     return studentsPairs;
+
+}
+
+function getPairsList(studentsPair, themes) {
+    studentsPair = getPairs(students);
+    let studentsPairsList = [];
+    for (let i = 0; i < studentsPair.length; i++) {
+        studentsPairsList.push([studentsPair[i].join(" i "), themes[i]]);
+    }
+    return studentsPairsList;
+
 }
 
 function getThemes(pairs, themes) {
@@ -28,18 +39,21 @@ function getMarks(students, marks) {
     return studentsMarks;
 }
 
-function getMarkStudentsThemes(studentsPairs, themes) {
+
+const pairs = getPairs(students);
+console.log(JSON.stringify(pairs));
+const pairsThemes = getPairsList(pairs, themes);
+console.log(JSON.stringify(pairsThemes));
+
+function getMarkStudentsThemes(pairs, themes, mark) {
     const studentsMarksThemes = [];
-    for (let i = 0; i < studentsPairs.length; i++) {
+    for (let i = 0; i < pairs.length; i++) {
         mark = Math.floor(Math.random() * 5) + 1;
-        studentsMarksThemes[i] = [studentsPairs[i], themes[i], mark];
+        studentsMarksThemes[i] = [pairsThemes[i][0], themes[i], mark];
+        console.log(pairsThemes);
     }
     return studentsMarksThemes;
 }
-const pairs = getPairs(students);
-console.log(JSON.stringify(pairs));
-const pairsThemes = getThemes(pairs, themes);
-console.log(JSON.stringify(pairsThemes));
 const markStudents = getMarks(students, marks);
 console.log(JSON.stringify(markStudents));
 const markStudentsThemes = getMarkStudentsThemes(pairs, themes);

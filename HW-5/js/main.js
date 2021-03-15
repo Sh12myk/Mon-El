@@ -13,7 +13,7 @@ function getRandomArray(length = 0, min = 0, max = 0) {
         console.log(`Введіть цілі числа!`)
     }
 }
-const arn = [1, 23, 5, 7, 8, 4, 4, 4, 5, 6, 6, 6, 6]
+const arn = [1, 23, 5, 7, 8, 4, 4, 4, 5, 6, 6]
 function findMode(arr) {
     let mapping = {};
     let mode = 0;
@@ -56,10 +56,3 @@ function getDividedByFive(...numbers) {
     return numbers.filter(number => number % 5 === 0 && Number.isInteger(number));
 }
 const dividedByFive = getDividedByFive(6, 2, 55, 100, 78, 2.44, 55, "5", 77, 57, 87, 23, 20.5, 56, 3, 2, "1");
-console.log(`Функція №1 : ${getRandomArray(1, 9, 67) }`);
-console.log(`Функція №2 : ${findMode(arn)}`);
-console.log(`Функція №3 : ${result}`);
-console.log(`Функція №4 : ${median}`);
-console.log(`Функція №5 : ${oddNumbers}`);
-console.log(`Функція №6 : ${countPositive}`);
-console.log(`Функція №7 : ${dividedByFive}`);

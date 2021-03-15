@@ -5,3 +5,19 @@
     outline: none;
     font-family: monospace;
 }
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+ul{
+    border: 2px double dodgerblue;
+    border-radius: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.result {
+    font-size: 20px;
+    text-align: center;
+    list-style-type:none;
+}

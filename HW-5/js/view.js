@@ -1,5 +1,5 @@
 const arrResult = [`Функція №1 : ${getRandomArray(1, 9, 35) }`,
- `Функція №2 : ${findMode(arn)}`,
+ `Функція №2 : ${getMode(arn)}`,
  `Функція №3 : ${result}`,
   `Функція №4 : ${median}`,
   `Функція №5 : ${oddNumbers}`,

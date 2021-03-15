@@ -13,22 +13,18 @@ function getRandomArray(length = 0, min = 0, max = 0) {
         console.log(`Введіть цілі числа!`)
     }
 }
-const arn = [1, 23, 5, 7, 8, 4, 4, 4, 5, 6, 6]
-function findMode(arr) {
+const arn = [1, 23, 5, 7, 8, 4, 4, 4, 5, 6, 6, 6, 6, 6]
+function findMode(arr){
     let mapping = {};
-    let mode = 0;
+    let mode = null;
     for (let i = 0; i < arr.length; i++) {
         if (!mapping[arr[i]]) {
             mapping[arr[i]] = 0;
         }
         mapping[arr[i]] += 1;
     }
-    for (let prop in mapping) {
-        if (mapping[prop] > mode) {
-            mode = parseInt(prop);
-        }
-    }
-    return mode
+    mode = Object.entries(mapping).sort(([,a],[,b]) => b-a)
+    return mode[0][0]
 }
 function getAverage(...numbers) {
     const newArr = numbers.filter(number => Number.isInteger(number));

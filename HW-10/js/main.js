@@ -17,6 +17,3 @@ function generateBlocksInterval(){
     document.querySelectorAll('.block').forEach(e => e.style.backgroundColor = getRandomColor());
 }, 1000);
 }
-generateBlocks()
-getRandomColor()
-generateBlocksInterval()

@@ -1,18 +1,8 @@
-function getRandomArray(length = 0, min = 0, max = 0) {
-    if (Number.isInteger(length) && length >= 0 && Number.isInteger(min) && Number.isInteger(max)) {
-        let randomArray = [];
-        for (let i = 0; i < length; i++) {
-            let randomNumber = 0;
-            while (randomNumber < min) {
-                randomNumber = Math.floor(Math.random() * max) + 1;
-            }
-            randomArray.push(randomNumber);
-        }
-        return randomArray;
-    } else {
-        console.log(`Введіть цілі числа!`)
+function randomInt(min, max) {
+    return min + Math.round((max-min)*Math.random());
     }
-}
+    
+const getRandomArray = (length, min, max)=> Array.from({length}).map(el=> randomInt(min, max));
 const arn = [1, 23, 5, 7, 8, 4, 4, 4, 5, 6, 6, 6, 6, 6]
 const getModa = (...numbers) =>{
 	const arr = numbers.filter(number => Number.isInteger(number));

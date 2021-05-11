@@ -10,7 +10,7 @@ const allCalculations = [`Максимальна ціна: ${maxNumber} грн.`
     `До сплати: ${toPayHundredth} грн.`,
     `Чистий прибуток: ${noPatHundredth} грн.`
 ]
-allCalculations.forEach(el => console.log(el))
+allCalculations.forEach(el => console.log(el))()
 const elements = Array.from(document.querySelectorAll('.сalculation'));
 console.log(elements);
 let i = 0;

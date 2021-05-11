@@ -15,3 +15,7 @@ function showResult() {
 
 btnResult.addEventListener('click', showResult)
 btnResult.addEventListener('click', randomInteger)
+
+module.exports = {
+    randomInteger
+}

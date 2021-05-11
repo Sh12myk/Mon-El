@@ -18,3 +18,5 @@ async function getKorean(length) {
 }
 
 getKorean(5)
+module.exports.getKorean = getKorean
+  

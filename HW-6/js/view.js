@@ -6,3 +6,6 @@ const arrResult = [getSubjects(students[0]) ,
   calculateWordLetters('циклопентанпергіндрофенантрен')]
   
   arrResult.forEach(el => console.log(el))
+  module.exports = {
+    arrResult
+  }

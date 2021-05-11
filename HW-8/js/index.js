@@ -83,3 +83,7 @@ mykola.recover();
 mykola.getScholarship();
 mykola.setMarks = 5;
 mykola.getScholarship();
+
+module.exports = {
+    Student
+  }

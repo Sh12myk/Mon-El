@@ -141,4 +141,7 @@ document.querySelector('.select').addEventListener('click', function setEpisode(
             })  
         })
 });
-    
+module.exports = {
+    getListOfPlanet
+  
+  }  

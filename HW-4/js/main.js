@@ -58,3 +58,6 @@ const markStudents = getMarks(students, marks);
 console.log(JSON.stringify(markStudents));
 const markStudentsThemes = getMarkStudentsThemes(pairs, themes);
 console.log(JSON.stringify(markStudentsThemes));
+module.exports = {
+    getMarkStudentsThemes
+}

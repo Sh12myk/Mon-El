@@ -28,4 +28,9 @@ hints.forEach(hintsOn);
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
 
 window.addEventListener("keydown", playNote);
+module.exports = {
+  removeTransition
+
+}
+
 

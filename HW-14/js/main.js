@@ -42,3 +42,8 @@ generator.addEventListener("click", ()=>{
     item.innerHTML = `Youre id : ${idGenerator.next().value}`;
     list.appendChild(item); 
 })
+
+module.exports = {
+    createIdGenerator
+  
+  } 

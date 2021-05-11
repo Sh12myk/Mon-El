@@ -1,3 +1,3 @@
 generateBlocks()
-//getRandomColor()
-//generateBlocksInterval()
+getRandomColor()
+generateBlocksInterval()

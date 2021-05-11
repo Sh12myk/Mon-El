@@ -20,3 +20,4 @@ const saleWithHundredth = parseFloat(sale.toFixed(2));
 const toPayHundredth = parseFloat(toPay.toFixed(2))
 const noPat = sumPriceAll / 2 - sale;
 const noPatHundredth = parseFloat(noPat.toFixed(2))
+module.exports.maxNumber = maxNumber

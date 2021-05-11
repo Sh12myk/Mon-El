@@ -10,10 +10,16 @@ function generateBlocks (){
 }
 function getRandomColor(){
   const r = () => {return Math.floor(Math.random()*10)};
-  return "#" + r() + r()+ r() + r() + r()+ r();
+  return '#' + Math.floor(Math.random()*16777215).toString(16);
 }
 function generateBlocksInterval(){
   setInterval(() => {
     document.querySelectorAll('.block').forEach(e => e.style.backgroundColor = getRandomColor());
 }, 1000);
+}
+module.exports = {
+  generateBlocks,
+  getRandomColor,
+  generateBlocksInterval
+
 }

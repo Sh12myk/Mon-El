@@ -1,4 +1,4 @@
-{
+
     const stepAll = document.querySelectorAll('.step')
     const btnNext = document.querySelector('.btn-submit')
     const formAll = document.querySelectorAll('form')
@@ -14,7 +14,7 @@
 
     const style = 'background: white; border: 1px solid gold; color: black; font-size: 30px; margin: 20px; padding: 20px;'
 
-    function checkTheEnteredUserNumber() {
+function checkTheEnteredUserNumber() {
         btnNext.addEventListener('click', checkTheEnteredUserNumber);
         btnNext.removeEventListener('click', checkTheEnteredUserNumber);
         const startNumber = Math.min(firstNumber.value, secondNumber.value);
@@ -120,4 +120,8 @@
         }
 
     }
-}
+
+ module.exports.activeStep = activeStep
+ 
+
+

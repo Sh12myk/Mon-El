@@ -32,3 +32,6 @@ function getMyTaxes(salary) {
     }, 10000);
     
   }
+  module.exports = {
+    getMySalary
+  }

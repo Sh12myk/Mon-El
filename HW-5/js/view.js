@@ -11,3 +11,6 @@ const arrResult = [`Функція №1 : ${getRandomArray(1, 9, 35) }`,
 const elements = Array.from(document.querySelectorAll('.result'));
 let i = 0;
 elements.forEach(el => el.innerHTML = arrResult[i++]);
+module.exports = {
+  arrResult
+}
